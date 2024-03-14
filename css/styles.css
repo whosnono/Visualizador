@@ -1,0 +1,188 @@
+@font-face {
+    font-family: pixellari;
+    src: url(../fonts/pixellari.woff);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-size: auto;
+    text-align: center;
+    font-family: pixellari, sans-serif;
+}
+
+p{
+    margin-top: 4vh;
+    background-color: #b7e3a8;;
+    border-radius: 1vh;
+    padding: 5vh;
+    color:#1e1e1d;
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+}
+
+table {
+    position: relative;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 5vh;
+    margin-left: -5vh;
+    width: 40vw;
+    height: 40vw;
+    min-width: 500px;
+    min-height: 500px;
+}
+
+tr,
+td {
+    border: none;
+}
+
+td.celda {
+    background-image: none;
+    height: 11%;
+    width: 11%;
+}
+
+td.jaque-b {
+    background: url(../img/normal/rey-b.png), radial-gradient(red, rgba(0, 0, 0, 0));
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+td.jaque-n {
+    background: url(../img/normal/rey-n.png), radial-gradient(red, rgba(0, 0, 0, 0));
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+td.peon-n {
+    background-image: url(../img/normal/peon-n.png);
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+td.peon-b {
+    background-image: url(../img/normal/peon-b.png);
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+td.caballo-b {
+    background-image: url(../img/normal/caballo-b.png);
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+td.caballo-n {
+    background-image: url(../img/normal/caballo-n.png);
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+td.torre-b {
+    background-image: url(../img/normal/torre-b.png);
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+td.torre-n {
+    background-image: url(../img/normal/torre-n.png);
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+td.alfil-b {
+    background-image: url(../img/normal/alfil-b.png);
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+td.alfil-n {
+    background-image: url(../img/normal/alfil-n.png);
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+td.rey-b {
+    background-image: url(../img/normal/rey-b.png);
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+td.rey-n {
+    background-image: url(../img/normal/rey-n.png);
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+td.reina-b {
+    background-image: url(../img/normal/reina-b.png);
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+td.reina-n {
+    background-image: url(../img/normal/reina-n.png);
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+tr:nth-child(even) td:nth-child(odd),
+tr:nth-child(odd) td:nth-child(even) {
+    background-color: #5d5b58;
+}
+
+tr:nth-child(odd) td:nth-child(odd),
+tr:nth-child(even) td:nth-child(even) {
+    background-color: #82a576;
+}
+
+td:first-child,
+td:last-child,
+tr:first-child>td,
+tr:last-child>td {
+    background-color: #ffffff !important;
+    color: rgb(0, 0, 0);
+}
+
+textarea {
+    margin: 2vh;
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+    background-color: #b7e3a8;
+    border: none;
+    padding: 2vh;
+    border-radius: 1vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+textarea:focus{
+    outline: none;
+}
+
+button,
+select, label {
+    margin-top: 1vh;
+    padding: 1vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+    cursor: pointer;
+    border-radius: 1vh;
+    border: none;
+    margin-left: 1vh;
+    background-color:#a29f9f;
+    color:#1e1e1d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:hover,
+select:hover, label:hover{
+    background-color: #d3d3d3;
+    color: rgb(41, 40, 40);
+}
+
+input[type=file] {
+    position: absolute;
+    top: -1000px;
+}
